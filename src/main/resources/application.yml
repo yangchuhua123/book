@@ -1,0 +1,22 @@
+#配置数据源
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/book?characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+
+#配置mybtais
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
